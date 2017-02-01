@@ -38,7 +38,7 @@ console.log(alphabet);
 document.onkeyup = function(event) {
 
        // asssihning users input to userGuess 
-	var userGuess = event.key;
+	var userGuess = event.key.toLowerCase();
     // javascript pre-set code for letters of the alphabet on a computer keyboard
     if (event.keyCode >= 65 && event.keyCode <= 90){
     // indexOf is telling computer that userGuess has been logged already resulting in false
