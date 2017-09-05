@@ -22,17 +22,9 @@ var psychic = {
 	}
 }
 
-
-
-      
-
-
 console.log(alphabet);
-
-
+// logging out here the correct answer 
  console.log(psychic.computerGuess);
-
-
 
 // holding the users key input
 document.onkeyup = function(event) {
@@ -45,15 +37,12 @@ document.onkeyup = function(event) {
     // will not continue running	
     	if (psychic.incorrect.indexOf(userGuess) == -1){ 
 
-
-
-
-
     		// if userguess = random computer guess 
 			if (userGuess == psychic.computerGuess){
 				// add +1 to score
 				psychic.wins++
 				// function to reset
+				alert("You Win ");
 				psychic.startover();
 
 				console.log("correct");
@@ -83,17 +72,5 @@ document.onkeyup = function(event) {
     	}
     }
 }
-
-
-
-	
-
-
-	
-
-	 
-
-		
-	
 
 	
